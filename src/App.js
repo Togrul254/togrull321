@@ -54,7 +54,7 @@ class App extends React.Component {
             <button className="btn">Daxil ol</button>
 
             <div className="prg2">
-           
+
           
             <Link to={'/lostpassword'} id="paragraf2" > Şifrəni unutdun?</Link>
             <Link to={'/register'} id="paragraf2" > Qeydiyyat</Link>
