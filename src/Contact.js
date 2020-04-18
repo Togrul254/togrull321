@@ -35,9 +35,9 @@ class Contact extends React.Component {
            
            <div className="footer">
              
-           <Link to={'/about'} id="paragraf3">  Haqqımızda</Link>
+           <Link to={"/about"} id="paragraf3">  Haqqımızda</Link>
            <p id="paragraf3"> Əlaqə</p>
-           <Link to={'/gps'} id="paragraf3" > GPS al</Link>
+           <Link to={"/gps"} id="paragraf3" > GPS al</Link>
        
             
 
@@ -56,10 +56,10 @@ class Contact extends React.Component {
 
       </div>
       <Switch>
-              <Route exact path='/about'>
+              <Route exact path="/about">
                 <About/>
               </Route>
-              <Route exact path='/gps'>
+              <Route exact path="/gps">
                 <Gps/>
               </Route>
       </Switch>

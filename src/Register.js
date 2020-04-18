@@ -39,8 +39,8 @@ import Contact from './Contact';
 
             <div className="prg2">
            
-            <Link to={'/'} id="paragraf2" > Giriş</Link>
-            <Link to={'/lostpassword'} id="paragraf2" > Şifrəni unutdun?</Link>
+            <Link to={"/login"} id="paragraf2" > Giriş</Link>
+            <Link to={"/lostpassword"} id="paragraf2" > Şifrəni unutdun?</Link>
           
             
             </div>
@@ -48,9 +48,9 @@ import Contact from './Contact';
            
            <div className="footer">
              
-           <Link to={'/about'} id="paragraf3" > Haqqımızda</Link>
-           <Link to={'/contact'} id="paragraf3"> Əlaqə</Link>
-           <Link to={'/gps'} id="paragraf3" > GPS al</Link>
+           <Link to={"/about"} id="paragraf3" > Haqqımızda</Link>
+           <Link to={"/contact"} id="paragraf3"> Əlaqə</Link>
+           <Link to={"/gps"} id="paragraf3" > GPS al</Link>
        
             
 
@@ -69,19 +69,19 @@ import Contact from './Contact';
 
       </div>
       <Switch>   
-             <Route exact path='/lostpassword'>
+             <Route exact path="/lostpassword">
                 <Lostpassword/>
               </Route>
-             <Route exact path='/'>
+             <Route exact path="/login">
                 <App/>
               </Route>
-              <Route exact path='/about'>
+              <Route exact path="/about">
                 <About/>
               </Route>
-              <Route exact path='/contact'>
+              <Route exact path="/contact">
                 <Contact/>
               </Route>
-              <Route exact path='/gps'>
+              <Route exact path="/gps">
                 <Gps/>
               </Route>
       </Switch>

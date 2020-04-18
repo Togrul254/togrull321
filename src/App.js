@@ -19,9 +19,6 @@ class App extends React.Component {
 
   }
 
-
-
-
   render() {
 
     return (
@@ -56,17 +53,18 @@ class App extends React.Component {
             <div className="prg2">
 
           
-            <Link to={'/lostpassword'} id="paragraf2" > Şifrəni unutdun?</Link>
-            <Link to={'/register'} id="paragraf2" > Qeydiyyat</Link>
+            <Link to={"/lostpassword"} id="paragraf2" > Şifrəni unutdun?</Link>
+            <Link to={"/register"} id="paragraf2" > Qeydiyyat</Link>
             
             </div>
           </div>
            
            <div className="footer">
              
-           <Link to={'/about'} id="paragraf3" > Haqqımızda</Link>
-           <Link to={'/contact'} id="paragraf3"> Əlaqə</Link>
-           <Link to={'/gps'} id="paragraf3" > GPS al</Link>
+                  
+           <Link to={"/about"} id="paragraf3" > Haqqımızda</Link>
+           <Link to={"/contact"} id="paragraf3"> Əlaqə</Link>
+           <Link to={"/gps"} id="paragraf3" > GPS al</Link>
        
             
 
@@ -87,19 +85,19 @@ class App extends React.Component {
       <Switch>
 
     
-              <Route exact path='/lostpassword'>
+              <Route exact path="/lostpassword">
                 <Lostpassword/>
               </Route>
-              <Route exact path='/register'>
+              <Route exact path="/register">
                 <Register/>
               </Route>
-              <Route exact path='/about'>
+              <Route exact path="/about">
                 <About/>
               </Route>
-              <Route exact path='/contact'>
+              <Route exact path="/contact">
                 <Contact/>
               </Route>
-              <Route exact path='/gps'>
+              <Route exact path="/gps">
                 <Gps/>
               </Route>
       </Switch>

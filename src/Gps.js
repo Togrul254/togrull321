@@ -32,8 +32,8 @@ class Gps extends React.Component {
            
            <div className="footer">
              
-           <Link to={'/about'} id="paragraf3">  Haqqımızda</Link>
-           <Link to={'/contact'} id="paragraf3" >Əlaqə </Link>
+           <Link to={"/about"} id="paragraf3">  Haqqımızda</Link>
+           <Link to={"/contact"} id="paragraf3" >Əlaqə </Link>
            <p id="paragraf3" > GPS al</p>
        
             
@@ -55,10 +55,10 @@ class Gps extends React.Component {
       <Switch>
             
              
-              <Route exact path='/about'>
+              <Route exact path="/about">
                 <About/>
               </Route>
-              <Route exact path='/contact'>
+              <Route exact path="/contact">
                 <Contact/>
               </Route>
       </Switch>

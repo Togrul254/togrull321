@@ -32,8 +32,8 @@ class About extends React.Component{
            <div className="footer">
              
            <p id="paragraf3" > Haqqımızda</p>
-           <Link to={'/contact'} id="paragraf3"> Əlaqə</Link>
-           <Link to={'/gps'} id="paragraf3" > GPS al</Link>
+           <Link to={"/contact"} id="paragraf3"> Əlaqə</Link>
+           <Link to={"/gps"} id="paragraf3" > GPS al</Link>
        
             
 
@@ -54,8 +54,8 @@ class About extends React.Component{
       <Switch>
             
              
-              <Route exact path='/contact' component={Contact} />
-              <Route exact path='/gps' component={Gps} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/gps"  component={Gps} />
       </Switch>
            
       </Router>
