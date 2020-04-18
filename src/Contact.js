@@ -15,7 +15,9 @@ class Contact extends React.Component {
 
           <div className="top">
             <div className="image">
+            <a href ="http://utigps.com/">
               <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
+              </a>
               <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
             </div>
 
@@ -54,10 +56,12 @@ class Contact extends React.Component {
 
       </div>
       <Switch>
-            
-             
-              <Route exact path='/about' component={About} />
-              <Route exact path='/gps' component={Gps} />
+              <Route exact path='/about'>
+                <About/>
+              </Route>
+              <Route exact path='/gps'>
+                <Gps/>
+              </Route>
       </Switch>
            
       </Router>

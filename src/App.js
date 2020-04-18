@@ -1,9 +1,5 @@
 import React from 'react';
 import './App.css';
-import Edit from './Edit';
-import Delete from './Delete';
-import Header from './Header';
-import Body from './Body';
 import { BrowserRouter as Router, Switch, Route, Link, } from 'react-router-dom';
 import Register from './Register';
 import Lostpassword from './Lostpassword';
@@ -32,13 +28,16 @@ class App extends React.Component {
 
 
       <Router>
+      
       <div className="Container" >
 
         <div className="box">
 
           <div className="top">
             <div className="image">
+              <a href ="http://utigps.com/">
               <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
+              </a>
               <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
             </div>
 
@@ -86,11 +85,23 @@ class App extends React.Component {
 
       </div>
       <Switch>
-              <Route path='/lostpassword'  component={Lostpassword} />
-              <Route  path='/register' component={Register} />
-              <Route  path='/about' component={About} />
-              <Route  path='/contact' component={Contact} />
-              <Route  path='/gps' component={Gps} />
+
+    
+              <Route exact path='/lostpassword'>
+                <Lostpassword/>
+              </Route>
+              <Route exact path='/register'>
+                <Register/>
+              </Route>
+              <Route exact path='/about'>
+                <About/>
+              </Route>
+              <Route exact path='/contact'>
+                <Contact/>
+              </Route>
+              <Route exact path='/gps'>
+                <Gps/>
+              </Route>
       </Switch>
            
       </Router>

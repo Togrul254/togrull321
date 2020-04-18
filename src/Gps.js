@@ -12,7 +12,9 @@ class Gps extends React.Component {
 
           <div className="top">
             <div className="image">
+            <a href ="http://utigps.com/">
               <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
+              </a>
               <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
             </div>
 
@@ -53,8 +55,12 @@ class Gps extends React.Component {
       <Switch>
             
              
-              <Route exact path='/about' component={About} />
-              <Route exact path='/contact' component={Contact} />
+              <Route exact path='/about'>
+                <About/>
+              </Route>
+              <Route exact path='/contact'>
+                <Contact/>
+              </Route>
       </Switch>
            
       </Router>

@@ -19,8 +19,10 @@ class Lostpassword extends React.Component {
 
           <div className="top">
             <div className="image">
+            <a href ="http://utigps.com/">
               <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
-              <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
+              </a>   
+           <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
             </div>
 
           </div>
@@ -36,7 +38,7 @@ class Lostpassword extends React.Component {
             <div className="prg2">
            
           
-            <Link to={'/login'} id="paragraf2" > Giriş</Link>
+            <Link to={'/'} id="paragraf2" > Giriş</Link>
             <Link to={'/register'} id="paragraf2" > Qeydiyyat</Link>
             
             </div>
@@ -65,11 +67,21 @@ class Lostpassword extends React.Component {
 
       </div>
       <Switch>
-              <Route exact path='/login' component={App} />
-              <Route exact path='/register' component={Register} />
-              <Route exact path='/about' component={About} />
-              <Route exact path='/contact' component={Contact} />
-              <Route exact path='/gps' component={Gps} />
+              <Route exact path='/'>
+                <App/>
+              </Route>
+              <Route exact path='/register'>
+                <Register/>
+              </Route>
+              <Route exact path='/about'>
+                <About/>
+              </Route>
+              <Route exact path='/contact'>
+                <Contact/>
+              </Route>
+              <Route exact path='/gps'>
+                <Gps/>
+              </Route>
       </Switch>
            
       </Router>

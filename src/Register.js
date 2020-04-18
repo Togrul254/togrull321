@@ -15,7 +15,9 @@ import Contact from './Contact';
 
           <div className="top">
             <div className="image">
+            <a href ="http://utigps.com/">
               <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
+              </a>
               <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
             </div>
 
@@ -37,7 +39,7 @@ import Contact from './Contact';
 
             <div className="prg2">
            
-            <Link to={'/login'} id="paragraf2" > Giriş</Link>
+            <Link to={'/'} id="paragraf2" > Giriş</Link>
             <Link to={'/lostpassword'} id="paragraf2" > Şifrəni unutdun?</Link>
           
             
@@ -66,12 +68,22 @@ import Contact from './Contact';
         </div>
 
       </div>
-      <Switch>
-              <Route  path='/login'exact component={App} /> 
-              <Route  path='/lostpassword' exact component={Lostpassword} />
-              <Route  path='/about' exact component={About} />
-              <Route  path='/contact'exact component={Contact} />
-              <Route  path='/gps' exact component={Gps} />
+      <Switch>   
+             <Route exact path='/lostpassword'>
+                <Lostpassword/>
+              </Route>
+             <Route exact path='/'>
+                <App/>
+              </Route>
+              <Route exact path='/about'>
+                <About/>
+              </Route>
+              <Route exact path='/contact'>
+                <Contact/>
+              </Route>
+              <Route exact path='/gps'>
+                <Gps/>
+              </Route>
       </Switch>
            
       </Router>
