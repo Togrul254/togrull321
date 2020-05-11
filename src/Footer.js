@@ -5,7 +5,7 @@ import { Container, Col, Row, } from 'react-bootstrap';
 function Footerr() {
 
     return (
-        <footer className="mt-5 bg-dark " >
+        <footer className="bg-dark " >
             <Container fluid={true} >
                 <Row className="border-top d-flex justify-content-between p-3 ">
                     <Col className="p-0 text-secondary  " md={5} se={12} >
