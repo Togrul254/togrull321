@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row, } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
 
 function Footerr() {
 
@@ -17,6 +18,16 @@ function Footerr() {
                         Məlumat internet səhifələrində istifadə edildikdə müvafiq keçidin qoyulması mütləqdir.
 
                        </Col>
+
+
+                       <Col className="p-0 text-secondary " md={3} se={12}  >
+                       
+                       <Image  style={{ height: "100px", width: "200px" }} src="ll.png" />
+                    
+                      </Col>
+
+
+
                     <Col className="p-0 d-flex justify-content-center  text-light" md={3}>
 
                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
