@@ -8,6 +8,7 @@ class Body extends React.Component {
 
 
       <React.Fragment>
+        
       <Carousel >
         <Carousel.Item>
     <img 

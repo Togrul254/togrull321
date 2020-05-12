@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Gps from './Gps';
 import About from './About';
@@ -9,16 +10,16 @@ class Contact extends React.Component {
       
      
       <Router>
-      <div className="Container" >
+      <div className="Container " >
 
         <div className="boxa">
 
           <div className="top">
             <div className="image">
-            <a href ="http://utigps.com/">
-              <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
-              </a>
-              <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
+       
+              <img style={{ width: "200px", height: "70px", }} src="ll.png"></img>
+              
+              <p style={{ color: "grey", fontSize:"14px"}}>Global Musiqi dinleme sistemi</p>
             </div>
 
           </div>
@@ -37,9 +38,7 @@ class Contact extends React.Component {
              
            <Link to={"/about"} id="paragraf3">  Haqqımızda</Link>
            <p id="paragraf3"> Əlaqə</p>
-           <Link to={"/gps"} id="paragraf3" > GPS al</Link>
-       
-            
+         
 
            </div>
      <div className="logo">

@@ -1,11 +1,12 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Gps from './Gps';
 import Contact from './Contact';
 class About extends React.Component{
   render() {
     return (
      
+                
       <Router>
       <div className="Container" >
 
@@ -13,10 +14,10 @@ class About extends React.Component{
 
           <div className="top">
             <div className="image">
-              <img style={{ width: "162px", height: "41px", }} src="logo.png"></img>
-              <p style={{ color: "grey", fontSize:"14px"}}>Global GPS izləmə sistemi</p>
+             
+            <img style={{ width: "200px", height: "70px", }} src="ll.png"></img> 
+              <p style={{ color: "grey", fontSize:"14px"}}>Global Musiqi dinleme sistemi</p>
             </div>
-
           </div>
           <div className="box2a">
             <div className="langa">
@@ -33,7 +34,7 @@ class About extends React.Component{
              
            <p id="paragraf3" > Haqqımızda</p>
            <Link to={"/contact"} id="paragraf3"> Əlaqə</Link>
-           <Link to={"/gps"} id="paragraf3" > GPS al</Link>
+          
        
             
 
@@ -54,11 +55,12 @@ class About extends React.Component{
       <Switch>
             
              
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/gps"  component={Gps} />
+              <Route  path="/contact" component={Contact} />
+          
       </Switch>
            
       </Router>
+
     );
   }
 }

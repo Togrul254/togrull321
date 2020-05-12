@@ -1,11 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './About';
+import Contact from './Contact';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Container, Navbar, NavbarBrand, Nav, NavbarToggle, NavbarCollapse, FormControl, Button, Form, Col, Image } from 'react-bootstrap';
 class Navbars extends React.Component {
     render() {
         return (
             <Router>
+                <Switch>
         <Container fluid={true} className="p-0">
 
           <Navbar className="border-bottom bg-dark " expand="lg">
@@ -29,8 +32,15 @@ class Navbars extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           
+
+            <Route  path="/About">
+              <About/>
+            </Route>
+            <Route  path="/Contact">
+              <Contact/>
+            </Route>
         </Container>
-       
+       </Switch>
       </Router>
 
         );
