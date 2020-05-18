@@ -26,8 +26,8 @@ class Navbars extends React.Component {
               </Nav>
 
               <Form inline className="ml-auto">
-                <FormControl style={{ height: "30px", marginTop: "5px" }} type="text" placeholder="Search" />
-                <Button style={{ height: "40px", width: "60px",  marginTop: "5px"}} type="button" size="sm" className=" m-0 mt-1 ml-sm-2" variant="outline-warning" >Submit</Button>
+                <FormControl style={{ height: "30px",width: "200px", marginTop: "5px",marginRight: "5px" }} type="text" placeholder="Search" />
+                <Button style={{ height: "40px", width: "60px",  marginTop: "5px"}} type="button" size="sm" className=" m-0 mt-1 ml-sm-2 " variant="outline-warning" >Submit</Button>
               </Form>
             </Navbar.Collapse>
           </Navbar>
