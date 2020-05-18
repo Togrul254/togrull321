@@ -33,7 +33,7 @@ class About extends React.Component{
            <div className="footer">
              
            <p id="paragraf3" > Haqqımızda</p>
-           <Link to={"/contact"} id="paragraf3"> Əlaqə</Link>
+           <Link to={"/Contact"} id="paragraf3"> Əlaqə</Link>
           
        
             
@@ -54,8 +54,9 @@ class About extends React.Component{
       </div>
       <Switch>
             
-             
-              <Route  path="/contact" component={Contact} />
+      <Route  path="/Contact">
+              <Contact/>
+            </Route>
           
       </Switch>
            

@@ -10,6 +10,7 @@ class Contact extends React.Component {
       
      
       <Router>
+        
       <div className="Container " >
 
         <div className="boxa">
@@ -36,7 +37,7 @@ class Contact extends React.Component {
            
            <div className="footer">
              
-           <Link to={"/about"} id="paragraf3">  Haqqımızda</Link>
+           <Link to={"/About"} id="paragraf3">  Haqqımızda</Link>
            <p id="paragraf3"> Əlaqə</p>
          
 
@@ -55,12 +56,10 @@ class Contact extends React.Component {
 
       </div>
       <Switch>
-              <Route exact path="/about">
+              <Route  path="/About">
                 <About/>
               </Route>
-              <Route exact path="/gps">
-                <Gps/>
-              </Route>
+             
       </Switch>
            
       </Router>
