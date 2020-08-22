@@ -37,7 +37,7 @@ class Contact extends React.Component {
            
            <div className="footer">
              
-           <Link to={"/About"} id="paragraf3">  Haqqımızda</Link>
+       
            <p id="paragraf3"> Əlaqə</p>
          
 
@@ -55,12 +55,7 @@ class Contact extends React.Component {
         </div>
 
       </div>
-      <Switch>
-              <Route  path="/About">
-                <About/>
-              </Route>
-             
-      </Switch>
+      
            
       </Router>
     );

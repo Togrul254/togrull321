@@ -66,19 +66,19 @@ class Lostpassword extends React.Component {
         </div>
         <Switch>
 
-          <Route exact path="/login">
+          <Route  path="/login">
             <App />
           </Route>
-          <Route exact path="/register">
+          <Route  path="/register">
             <Register />
           </Route>
-          <Route exact path="/about">
+          <Route  path="/about">
             <About />
           </Route>
-          <Route exact path="/contact">
+          <Route  path="/contact">
             <Contact />
           </Route>
-          <Route exact path="/gps">
+          <Route  path="/gps">
             <Gps />
           </Route>
         </Switch>

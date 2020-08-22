@@ -11,18 +11,18 @@ class Navbars extends React.Component {
                 <Switch>
         <Container fluid={true} className="p-0">
 
-          <Navbar className="border-bottom bg-dark " expand="lg">
+          <Navbar inverse fluid className="border-bottom bg-dark " expand="lg" >
           
               
             <Image  style={{ height: "70px", width: "180px" }} src="ll.png" />
          
             <Navbar.Toggle className="border" aria-controls="navbar-toggle" />
-            <Navbar.Collapse id="navbar-toggle">
+            <Navbar.Collapse id="navbar-toggle " >
 
               <Nav>
-                <Link className="nav-link  text-warning " to="/">Home</Link>
-                <Link className="nav-link  text-warning" to="/About">About</Link>
-                <Link className="nav-link  text-warning" to="/Contact">Contact</Link>
+                <Link className="nav-link  text-warning " to="/"> <i class="fas fa-home"></i> Home</Link>
+                <Link className="nav-link  text-warning" to="/About"> <i class="fas fa-address-card"></i> About</Link>
+                <Link className="nav-link  text-warning" to="/Contact"><i class="fas fa-file-signature"></i> Contact</Link>
               </Nav>
 
               <Form inline className="ml-auto">
@@ -32,13 +32,6 @@ class Navbars extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           
-
-            <Route  path="/About">
-              <About/>
-            </Route>
-            <Route  path="/Contact">
-              <Contact/>
-            </Route>
         </Container>
        </Switch>
       </Router>
